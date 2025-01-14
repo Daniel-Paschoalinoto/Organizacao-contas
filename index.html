@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Lista de Contas a Pagar</title>
+</head>
+
+<body>
+	<header>
+		<h1>Lista de Contas a Pagar</h1>
+        <button id="resetButton">Reset</button>
+	</header>
+
+	<main>
+		<section>
+			<h2>Adicionar Nova Conta</h2>
+			<form id="contaForm">
+				<input type="text" maxlength="32" id="nomeConta" placeholder="Nome da Conta" required>
+				<button type="submit">Adicionar Conta</button>
+			</form>
+		</section>
+
+		<section>
+			<h2>Minhas Contas a Pagar</h2>
+			<ul id="listaContas">
+			</ul>
+			<div id="noItemsMessage" class="no-items-message">
+				Nenhuma conta cadastrada.
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<p>&copy; 2025 Daniel Paschoalinoto</p>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
